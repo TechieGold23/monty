@@ -1,9 +1,13 @@
 #include "monty.h"
 
 /**
+ * execute_opcode - execute op code
+ * @opcode: opcode
+ * @argument: argument
+ * @stack: stack
+ * @line_number: line_number
  *
- *
- *
+ * Return: void
  */
 void execute_opcode(char *opcode, char *argument,
 		stack_t **stack, unsigned int line_number)
@@ -39,10 +43,12 @@ void execute_opcode(char *opcode, char *argument,
 }
 
 /**
+ * process_line - process line
+ * @stack: stack
+ * @line: line
+ * @line_number: line number
  *
- *
- *
- *
+ * Return: void
  */
 void process_line(char *line, stack_t **stack, unsigned int line_number)
 {
@@ -65,8 +71,10 @@ void process_line(char *line, stack_t **stack, unsigned int line_number)
 }
 
 /**
+ * process_file - process file
+ * @file: file
  *
- *
+ * Return: void
  */
 void process_file(FILE *file)
 {
