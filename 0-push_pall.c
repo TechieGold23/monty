@@ -8,7 +8,7 @@
  *
  * Return: void
  */
-void push(stack_t **stack, int value)
+void push(stack_t **stack, unsigned int value)
 {
 	stack_t *new_node = (stack_t *)malloc(sizeof(stack_t));
 

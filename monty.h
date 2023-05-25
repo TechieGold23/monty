@@ -38,14 +38,17 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push(stack_t **stack, int value);
+void push(stack_t **stack, unsigned int value);
 void pall(stack_t **stack);
 void process_file(FILE *file);
 void process_line(char *line, stack_t **stack, unsigned int line_number);
 void execute_opcode(char *opcode, char *argument,
 		stack_t **stack, unsigned int line_number);
-void pint(stack_t **stack, int line_number);
+void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 
 
 #endif/*MONTY_H*/
