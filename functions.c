@@ -29,7 +29,7 @@ void execute_opcode(char *opcode, char *argument,
 		}
 
 		arg = atoi(argument);
-		push(stack, arg);
+		push(stack, arg, line_number);
 	}
 	else if (strcmp(opcode, "pall") == 0)
 		pall(stack);

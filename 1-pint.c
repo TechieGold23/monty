@@ -19,9 +19,11 @@ void pint(stack_t **stack, unsigned int line_number)
 }
 
 /**
+ * pop - pop the top element of the stack
+ * @stack: stack
+ * @line_number: line number
  *
- *
- *
+ * Return: void
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
@@ -42,9 +44,11 @@ void pop(stack_t **stack, unsigned int line_number)
 }
 
 /**
+ * swap - swaps the top two elements of the stack
+ * @stack: stack
+ * @line_number: line_number
  *
- *
- *
+ * Return: void
  */
 void swap(stack_t **stack, unsigned int line_number)
 {
