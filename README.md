@@ -31,7 +31,7 @@ add:  Adds the top two elements of the stack.\
 sub:  Subtracts the top element of the stack from the second top element.\
 div:  Divides the second top element of the stack by the top element.\
 mul:  Multiplies the top two elements of the stack.\
-mod:  Computes the modulus of the second top element divided by the top element.\
+mod:  Computes the modulus of the second top element divided by the top element.
   
   # Error Handling
   
