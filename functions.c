@@ -43,6 +43,14 @@ void execute_opcode(char *opcode, char *argument,
 		add(stack, line_number);
 	else if (strcmp(opcode, "nop") == 0)
 		nop(stack, line_number);
+	else if (strcmp(opcode, "sub") == 0)
+		sub(stack, line_number);
+	else if (strcmp(opcode, "pchar") == 0)
+		pchar(stack, line_number);
+	else if (strcmp(opcode, "dive") == 0)
+		dive(stack, line_number);
+	else if (strcmp(opcode, "mul") == 0)
+		mul(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
